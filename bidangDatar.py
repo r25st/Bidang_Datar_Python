@@ -45,21 +45,21 @@ elif pilihan.lower() == "trapesium" :
     x = int(input("Masukan alas atas trapesium = "))
     y = int(input("Masukan alas bawah trapesium = "))
     z = int(input("Masukan tinggi trapesium = "))
-    print(luasTrapesium(x,y,z))
+    print(str(luasTrapesium(x,y,z)) + " m2")
 
 elif pilihan.lower().replace("belah ", "belah") == "belahketupat":
     x = int(input("Masukan diameter pertama = "))
     z = int(input("Masukan diameter kedua = "))
-    print(luasBelahKetupat(x,z))
+    print(str(luasBelahKetupat(x,z)) + " m2")
 
 elif pilihan.lower().replace("layang ", "layang") == "layanglayang":
     x = int(input("Masukan diameter pertama = "))
     z = int(input("Masukan diameter kedua = "))
-    print(luasLayangLayang(x,z))
+    print(str(luasLayangLayang(x,z)) + " m2")
 
 elif pilihan.lower() == "lingkaran":
     x = int(input("Masukan jari jari lingkaran = "))
-    print(luasLingkaran(x))
+    print(str(luasLingkaran(x)) + " m2")
 
 else :
     print("Maaf pilihan kamu tidak masuk ke dalam bangun ruang ini, jika kamu yakin pilihan kamu termasuk bangun ruang periksa kembali ejaan kamu.")
